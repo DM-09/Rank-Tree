@@ -1,0 +1,12 @@
+.box {
+  margin: 0 auto;
+  width: fit-content;
+  text-align: left;
+}
+
+.mini {
+  font-size: 0.6em
+}
+
+.a { color: #B37615; text-decoration-line: none; }
+.toggle { color: gray; text-decoration-line: none; }
