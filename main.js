@@ -32,10 +32,11 @@ var theme = ''
 
 window.onload = async function() {
   var box = document.querySelector('#box')
-  var res = await getAPI('https://search.namu.wiki/api/ranking')
+  var res = await getAPI('https://namu.wiki/app-api/ranking')
   var s = 1
 
-  for (var i of res) {
+  for (var i of res['keywords']) {
+    i = i['keyword']
     box.innerHTML += `
     <div>
      ${s}. <a href="#" class='a' onClick="window.open('https://namu.wiki/w/${i}')">${i}</a>  <span><i class="bi bi-copy mini" onClick="copy('${i}')"></i></span>
