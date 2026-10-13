@@ -32,7 +32,7 @@ var theme = ''
 
 window.onload = async function() {
   var box = document.querySelector('#box')
-  var res = await getAPI('https://namu.wiki/app-api/ranking')
+  var res = await getAPI('https://api-py.vercel.app/?r=https://namu.wiki/app-api/ranking')
   var s = 1
 
   for (var i of res['keywords']) {
